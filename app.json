@@ -28,6 +28,20 @@
     "plugins": [
       "expo-router",
       [
+        "expo-camera",
+        {
+          "cameraPermission": "Permita que o GeoVault acesse a camera para tirar fotos dos seus segredos.",
+          "microphonePermission": "Permita que o GeoVault acesse o microfone caso a camera solicite esta permissao.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permita que o GeoVault acesse sua localizacao para salvar o ponto do segredo."
+        }
+      ],
+      [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
